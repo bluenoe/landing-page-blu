@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubu Coffee - Cà phê chuẩn gu Gen Z</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Bubu Coffee</div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Cà phê chuẩn gu, chill mọi nơi!</h1>
+            <p class="hero-description">Thức uống cho tâm hồn Gen Z bận rộn</p>
+            <button class="cta-button" onclick="scrollToSection('menu')">Đặt hàng ngay</button>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu nổi bật</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="assets/coffee1.jpg" alt="Cà phê sữa đá" class="menu-image">
+                    <h3>Cà phê sữa đá</h3>
+                    <p class="price">25.000đ</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/coffee2.jpg" alt="Cold Brew" class="menu-image">
+                    <h3>Cold Brew Signature</h3>
+                    <p class="price">35.000đ</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/coffee3.jpg" alt="Matcha Latte" class="menu-image">
+                    <h3>Matcha Latte</h3>
+                    <p class="price">30.000đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sự khác biệt của Bubu Coffee</h2>
+                    <p>Tại Bubu, chúng tôi hiểu rằng Gen Z cần năng lượng để tỏa sáng. Mỗi ly cà phê không chỉ là thức uống, mà là nguồn cảm hứng để bạn chinh phục thế giới. Với công thức độc quyền và nguyên liệu tuyển chọn, Bubu mang đến trải nghiệm cà phê đỉnh cao, phù hợp với phong cách sống năng động của bạn.</p>
+                </div>
+                <img src="assets/about.jpg" alt="Về Bubu Coffee" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <div class="container">
+            <h2 class="section-title">Khách hàng nói gì về Bubu</h2>
+            <div class="feedback-slider">
+                <div class="feedback-track" id="feedback-track">
+                    <div class="feedback-item">
+                        <img src="assets/avatar1.jpg" alt="Avatar" class="feedback-avatar">
+                        <h4>Nguyễn Minh Anh</h4>
+                        <p>"Cà phê ở đây đậm vị, giá sinh viên mà chất lượng quá ổn. Order online rất tiện!"</p>
+                    </div>
+                    <div class="feedback-item">
+                        <img src="assets/avatar2.jpg" alt="Avatar" class="feedback-avatar">
+                        <h4>Trần Hoàng Long</h4>
+                        <p>"Cold Brew signature là best seller, uống xong tỉnh táo cả ngày. Recommend cho team night owl!"</p>
+                    </div>
+                    <div class="feedback-item">
+                        <img src="assets/avatar3.jpg" alt="Avatar" class="feedback-avatar">
+                        <h4>Lê Thị Thuỳ Linh</h4>
+                        <p>"Matcha latte siêu ngon, không quá ngọt, phù hợp với ai healthy như mình."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ với chúng tôi</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Tên của bạn</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin nhắn</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Gửi tin nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Bubu Coffee</h3>
+                    <p>📍 123 Nguyễn Trãi, Q.1, TP.HCM</p>
+                    <p>⏰ 7:00 - 22:00 hàng ngày</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bubu Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
